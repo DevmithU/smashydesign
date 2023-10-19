@@ -9,7 +9,7 @@
     <style>
         /*@import url('https://fonts.googleapis.com/css?family=Manrope');*/
         /*@import url('https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans');*/
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Plus+Jakarta+Sans:wght@500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
         /*@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Plus+Jakarta+Sans&display=swap');*/
 
         :root {
@@ -62,6 +62,7 @@
             width: 76px;
         }
         .field{
+
             margin-top: 10px;
             display: flex;
             flex-direction: column;
@@ -69,17 +70,17 @@
             width: 444px;
         }
         .field-title{
+            /*background-color: var(--red);*/
+
             font-family: Plus Jakarta Sans;
             font-weight: 500;
             font-size: 16px;
             color: var(--dark-blue);
         }
-        .field-input{
-            margin-top: 15px;
-            display: flex;
 
-        }
         .field-input-text{
+            /*background-color: var(--yellow);*/
+
             border: 0;
             border-bottom: 1px solid var(--light-grey);
             outline: none;
@@ -101,6 +102,7 @@
         }
 
         .btn-submit{
+            height: 45px;
             margin-top: 30px;
             border: 0;
             border-radius: 0;
@@ -112,20 +114,18 @@
             padding: 12px 56px 12px 56px ;
 
         }
-        .btn-submit:hover{
-            margin-top: 50px;
-            border: 5px solid var(--yellow);
-            border-radius: 0;
-            /*background-color: #ffedad;*/
-            background-color: #ffffff;
-            font-family: Plus Jakarta Sans;
-            font-weight: 600;
-            font-size: 16px;
-            color: var(--dark-blue);
-            padding: 7px 51px 7px 51px ;
-
-            cursor: pointer;
+        .btn-submit-text{
+            height: 21px;
         }
+
+        /*.btn-submit:hover{*/
+        /*    padding: 7px 51px 7px 51px ;*/
+
+        /*    border: 5px solid var(--yellow);*/
+        /*    !*background-color: #ffedad;*!*/
+        /*    background-color: #ffffff;*/
+        /*    cursor: pointer;*/
+        /*}*/
         input:-webkit-autofill,
         input:-webkit-autofill:hover,
         input:-webkit-autofill:focus,
@@ -154,10 +154,41 @@
             margin-left: auto;
             height: 15px;
             margin-top: 5px;
+            display: block;
+            border: none;
+            padding: 0;
+        }
+        .error-msg2{
+            display: block;
+            /*border: none;*/
+            /*padding: 0;*/
+            /*background-color: aqua;*/
+            /*border: 0;*/
+            /*outline: none;*/
+
+            margin-top: -1px;
 
         }
         .field-set{
             margin-top: 31px;
+        }
+        .input-error{
+            color: var(--red);
+            font-weight: 600;
+
+            /*margin-top: 3px;*/
+        }
+
+        .field-input2{
+            /*display: flex;*/
+            margin-top: 18px !important;
+            color: var(--red);
+        }
+        .field-input{
+
+            margin-top: 15px;
+            display: flex;
+
         }
     </style>
 </head>
@@ -196,7 +227,7 @@
 
                     </div>
                     <div class="error-msg">
-                    <span>
+                    <span class="error-msg2">
                                                 Invalid email address
 
                     </span>
@@ -217,8 +248,8 @@
 
                     </div>
                     <div class="error-msg">
-                    <span>
-                                                Invalid email address
+                    <span class="error-msg2">
+                                                Invalid Last Name
 
                     </span>
                     </div>
@@ -230,15 +261,15 @@
                         Email Address*
                     </span>
                     </div>
-                    <div class="field-input">
-                        <input class="field-input-text" type="text" placeholder="Please type your email address">
+                    <div class="field-input field-input2">
+                        <input class="field-input-text input-error" type="text" placeholder="Please type your email address" value="hellosmashy#.com">
 
                     </div>
                     <div class="field-line">
 
                     </div>
                     <div class="error-msg">
-                    <span>
+                    <span class="error-msg2">
                         Invalid email address
                     </span>
                     </div>
@@ -250,7 +281,7 @@
                         Address*
                     </span>
                     </div>
-                    <div class="field-input">
+                    <div class="field-input field-input2">
                         <input class="field-input-text" type="text" placeholder="Please type your address">
 
                     </div>
@@ -258,8 +289,8 @@
 
                     </div>
                     <div class="error-msg">
-                    <span>
-                                                Invalid email address
+                    <span class="error-msg2">
+                                                Invalid  address
 
                     </span>
                     </div>
@@ -269,9 +300,11 @@
 
             </div>
 
-            <div>
+            <div class="">
                 <button class="btn-submit">
-                    <span>Submit</span>
+                    <div class="btn-submit-text">
+                        <span >Submit</span>
+                    </div>
                 </button>
 
             </div>

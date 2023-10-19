@@ -3,8 +3,291 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+
+
+    <style>
+        /*@import url('https://fonts.googleapis.com/css?family=Manrope');*/
+        /*@import url('https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans');*/
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Plus+Jakarta+Sans:wght@500;600&display=swap');
+        /*@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Plus+Jakarta+Sans&display=swap');*/
+
+        :root {
+            --dark-blue: #05253C;
+            --white: #ffffff;
+            --yellow: #FFDC47;
+            --grey: #DBDBDB;
+            --light-grey: #EBEBEB;
+            --red: #FF0000;
+
+        }
+        body {
+            /*background-color: linen;*/
+            /*display: block;*/
+            margin: 0px;
+        }
+
+        h1{
+            margin: 0px;
+            margin-top: 31px;
+            font-family: Manrope;
+            font-weight: 200;
+            font-size: 40px;
+            color: var(--dark-blue);
+        }
+        .commentForm {
+            /*background-color: aqua;*/
+            width: 783px;
+            height: 768px;
+            min-width: 783px;
+
+        }
+        .fillerImage {
+            /*background-color: blueviolet;*/
+            width: 583px;
+            height: 768px;
+        }
+        .container {
+            display: flex;
+        }
+        .commentFormBody {
+            margin-top: 81px;
+            /*height: 100%;*/
+            /*background-color: darkorange;*/
+            margin-left: 139px;
+        }
+        .logo{
+            background-color: var(--yellow);
+            height: 76px;
+            width: 76px;
+        }
+        .field{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 444px;
+        }
+        .field-title{
+            font-family: Plus Jakarta Sans;
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--dark-blue);
+        }
+        .field-input{
+            margin-top: 15px;
+            display: flex;
+
+        }
+        .field-input-text{
+            border: 0;
+            border-bottom: 1px solid var(--light-grey);
+            outline: none;
+            width: 444px;
+            /*text-align: center;*/
+            font-family: Plus Jakarta Sans;
+            font-weight: 500;
+            font-size: 12px;
+            color: var(--dark-blue);
+            /*background-color: var(--yellow);*/
+            padding: 0;
+            padding-bottom: 5px;
+
+
+        }
+        .field-input-text::placeholder {
+            color: var(--grey);
+            opacity: 1; /* Firefox */
+        }
+
+        .btn-submit{
+            margin-top: 30px;
+            border: 0;
+            border-radius: 0;
+            background-color: var(--yellow);
+            font-family: Plus Jakarta Sans;
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--dark-blue);
+            padding: 12px 56px 12px 56px ;
+
+        }
+        .btn-submit:hover{
+            margin-top: 50px;
+            border: 5px solid var(--yellow);
+            border-radius: 0;
+            /*background-color: #ffedad;*/
+            background-color: #ffffff;
+            font-family: Plus Jakarta Sans;
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--dark-blue);
+            padding: 7px 51px 7px 51px ;
+
+            cursor: pointer;
+        }
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active{
+            -webkit-background-clip: text;
+            -webkit-text-fill-color:var(--dark-blue);
+        }
+        .fill-image{
+            width:583px;
+            max-width:583px;
+        }
+        img {
+            display: block;
+            margin: 0;
+            border: none;
+            padding: 0;
+        }
+        .logo-image{
+            width: 76px;
+        }
+        .error-msg{
+            font-family: Plus Jakarta Sans;
+            font-weight: 600;
+            font-size: 12px;
+            color: var(--red);
+            margin-left: auto;
+            height: 15px;
+            margin-top: 5px;
+
+        }
+        .field-set{
+            margin-top: 31px;
+        }
+    </style>
 </head>
 <body>
+<div class="container">
+
+
+    <div class="commentForm">
+
+        <div class="commentFormBody">
+
+            <div class="logo">
+                <img src="Logo.svg" alt="Fill image" class="logo-image">
+
+            </div>
+            <div class="title">
+                <h1>
+                    <span>
+                        We'd love to hear from you.
+                    </span>
+                </h1>
+
+            </div>
+            <div class="field-set">
+                <div class="field">
+                    <div class="field-title">
+                    <span>
+                        First Name*
+                    </span>
+                    </div>
+                    <div class="field-input">
+                        <input class="field-input-text" type="text" placeholder="Please type your first name" value="Chamaka">
+
+                    </div>
+                    <div class="field-line">
+
+                    </div>
+                    <div class="error-msg">
+                    <span>
+                                                Invalid email address
+
+                    </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="field-title">
+                    <span>
+                       Last Name*
+                    </span>
+                    </div>
+                    <div class="field-input">
+                        <input class="field-input-text" type="text" placeholder="Please type your last name">
+
+                    </div>
+                    <div class="field-line">
+
+                    </div>
+                    <div class="error-msg">
+                    <span>
+                                                Invalid email address
+
+                    </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="field-title">
+                    <span>
+                        Email Address*
+                    </span>
+                    </div>
+                    <div class="field-input">
+                        <input class="field-input-text" type="text" placeholder="Please type your email address">
+
+                    </div>
+                    <div class="field-line">
+
+                    </div>
+                    <div class="error-msg">
+                    <span>
+                        Invalid email address
+                    </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="field-title">
+                    <span>
+                        Address*
+                    </span>
+                    </div>
+                    <div class="field-input">
+                        <input class="field-input-text" type="text" placeholder="Please type your address">
+
+                    </div>
+                    <div class="field-line">
+
+                    </div>
+                    <div class="error-msg">
+                    <span>
+                                                Invalid email address
+
+                    </span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div>
+                <button class="btn-submit">
+                    <span>Submit</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="fillerImage">
+        <img src="jordan-steranka-lpddCskeg4A-unsplash@2x.png" alt="Fill image" class="fill-image">
+
+    </div>
+
+</div>
+
+
 
 </body>
 </html>

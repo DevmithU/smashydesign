@@ -1,0 +1,223 @@
+/*@import url('https://fonts.googleapis.com/css?family=Manrope');*/
+/*@import url('https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans');*/
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
+/*@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Plus+Jakarta+Sans&display=swap');*/
+:root {
+  --dark-blue: #05253C;
+  --white: #ffffff;
+  --yellow: #FFDC47;
+  --grey: #DBDBDB;
+  --light-grey: #EBEBEB;
+  --red: #FF0000;
+}
+
+.chr-title {
+  font: normal normal 200 40px Manrope;
+  letter-spacing: 0px;
+  color: #05253C;
+}
+
+.chr-field-title, .field-title {
+  font: normal normal 500 16px Plus Jakarta Sans;
+  letter-spacing: 0px;
+  color: #05253C;
+}
+
+.chr-field-input-placeholder {
+  font: 200 40px Plus Jakarta Sans;
+  letter-spacing: 0px;
+  color: #05253C;
+}
+
+.chr-field-input-value {
+  font: 200 40px Plus Jakarta Sans;
+  letter-spacing: 0px;
+  color: #05253C;
+}
+
+.chr-field-input-value {
+  font: normal normal 200 40px Plus Jakarta Sans;
+  letter-spacing: 0px;
+  color: #05253C;
+}
+
+.chr-field-error {
+  font: normal normal 200 40px Plus Jakarta Sans;
+  letter-spacing: 0px;
+  color: #05253C;
+}
+
+.chr-submit {
+  font: normal normal 200 40px Plus Jakarta Sans;
+  letter-spacing: 0px;
+  color: #05253C;
+}
+
+body {
+  /*background-color: linen;*/
+  /*display: block;*/
+  margin: 0px;
+}
+
+h1 {
+  margin: 0px;
+  margin-top: 31px;
+  font: 200 40px Manrope;
+  color: #05253C;
+}
+
+.commentForm {
+  /*background-color: aqua;*/
+  width: 783px;
+  height: 768px;
+  min-width: 783px;
+}
+
+.fillerImage {
+  /*background-color: blueviolet;*/
+  width: 583px;
+  height: 768px;
+}
+
+.container {
+  display: flex;
+}
+
+.commentFormBody {
+  margin-top: 81px;
+  /*height: 100%;*/
+  /*background-color: darkorange;*/
+  margin-left: 139px;
+}
+
+.logo {
+  background-color: var(--yellow);
+  height: 76px;
+  width: 76px;
+}
+
+.field {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 444px;
+}
+
+.field-title {
+  /*background-color: var(--red);*/
+}
+
+.field-input-text {
+  /*background-color: var(--yellow);*/
+  border: 0;
+  border-bottom: 1px solid var(--light-grey);
+  outline: none;
+  width: 444px;
+  /*text-align: center;*/
+  font-family: Plus Jakarta Sans;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--dark-blue);
+  /*background-color: var(--yellow);*/
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+.field-input-text::placeholder {
+  color: var(--grey);
+  opacity: 1; /* Firefox */
+}
+
+.btn-submit {
+  height: 45px;
+  margin-top: 30px;
+  border: 0;
+  border-radius: 0;
+  background-color: var(--yellow);
+  font-family: Plus Jakarta Sans;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--dark-blue);
+  padding: 12px 56px 12px 56px;
+}
+
+.btn-submit-text {
+  height: 21px;
+}
+
+/*.btn-submit:hover{*/
+/*    padding: 7px 51px 7px 51px ;*/
+/*    border: 5px solid var(--yellow);*/
+/*    !*background-color: #ffedad;*!*/
+/*    background-color: #ffffff;*/
+/*    cursor: pointer;*/
+/*}*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--dark-blue);
+}
+
+.fill-image {
+  width: 583px;
+  max-width: 583px;
+}
+
+img {
+  display: block;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.logo-image {
+  width: 76px;
+}
+
+.error-msg {
+  font-family: Plus Jakarta Sans;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--red);
+  margin-left: auto;
+  height: 15px;
+  margin-top: 5px;
+  display: block;
+  border: none;
+  padding: 0;
+}
+
+.error-msg2 {
+  display: block;
+  /*border: none;*/
+  /*padding: 0;*/
+  /*background-color: aqua;*/
+  /*border: 0;*/
+  /*outline: none;*/
+  margin-top: -1px;
+}
+
+.field-set {
+  margin-top: 31px;
+}
+
+.input-error {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.field-input2 {
+  /*display: flex;*/
+  margin-top: 18px !important;
+  color: var(--red);
+}
+
+.field-input {
+  margin-top: 15px;
+  display: flex;
+}
+
+/*# sourceMappingURL=styles.css.map */

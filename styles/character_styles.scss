@@ -29,7 +29,7 @@
 }
 .chr-field-error{
   @extend .chr-field-input;
-  font-weight: 600;
+  font-weight: 500;
   color: $red;
 }
 .chr-field-input-value-error{

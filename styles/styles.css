@@ -29,7 +29,7 @@
 }
 
 .chr-field-error, .chr-field-error-msg, .error-msg, .chr-field-input-value-error, .input-value-error {
-  font-weight: 600;
+  font-weight: 500;
   color: #FF0000;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .chr-field-error, .chr-field-input-value-error, .input-value-error, .chr-field-error-msg, .error-msg {
-  font-weight: 600;
+  font-weight: 500;
   color: #FF0000;
 }
 
@@ -240,7 +240,7 @@ img {
 }
 
 .chr-field-error, .chr-field-input-value-error, .chr-field-error-msg, .error-msg, .input-value-error {
-  font-weight: 600;
+  font-weight: 500;
   color: #FF0000;
 }
 
@@ -307,7 +307,7 @@ img {
 }
 
 .chr-field-error, .chr-field-input-value-error, .chr-field-error-msg, .error-msg, .input-value-error {
-  font-weight: 600;
+  font-weight: 500;
   color: #FF0000;
 }
 
@@ -358,7 +358,7 @@ img {
 }
 
 .chr-field-error, .chr-field-input-value-error, .chr-field-error-msg, .error-msg, .input-value-error {
-  font-weight: 600;
+  font-weight: 500;
   color: #FF0000;
 }
 

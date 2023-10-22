@@ -1,155 +1,29 @@
 @import "../character_styles";
 @import "../colors";
 @media screen and (min-width: 1366px) {
-  //body {
-  //  background-color: lightgreen;
-  //}
+
 
   body {
     background-color: lightgreen;
-    /*display: block;*/
-    margin: 0px;
   }
 
-  h1{
-    width: 471px;
-  }
+
   .commentForm {
-    /*background-color: aqua;*/
-    width: calc((783 / 1366) * 100vw); /* Dynamically calculates the width */
 
-
-  }
-  .fillerImage {
-    /*background-color: blueviolet;*/
-    width: calc((583 / 1366) * 100vw); /* Dynamically calculates the width */
-    background-size: cover;
-
-    //width: 583px;
-    height: 100vh;
-    display: block;
+    min-width: 783px;
 
   }
-  .container {
-    display: flex;
-    flex-direction: row;
-
-  }
-
   .commentFormBody {
-    margin-top: max( calc((81/768)* 100vh),81px ) ;
-    height: fit-content;
-
-    width: fit-content;
     margin-left: calc((139 / 1366) * 100vw);
   }
-  .logo{
-    //background-color: $yellow;
-    height: 76px;
-    width: 76px;
-  }
-  .title{
-    width: fit-content;
-  }
-  .field{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 444px;
-  }
-  .field-title{
 
-  }
-  .field-input-text{
-    border: 0;
-    //border-bottom: 1px solid $light-grey;
-    outline: none;
-    width: 444px;
-    /*background-color: var(--yellow);*/
-    padding: 0;
-    padding-bottom: 5px;
-    /*text-align: center;*/
-  }
-  .field-input-text::placeholder {
-    opacity: 1; /* Firefox */
-  }
 
-  .btn-submit{
-    height: 45px;
-    margin-top: 30px;
-    border: 0;
-    border-radius: 0;
-    //background-color: $yellow;
-    padding: 12px 56px 12px 56px ;
 
-  }
-  .btn-submit-text{
-    height: 21px;
-  }
-  .btn-submit-container{
-    width: fit-content;
-  }
 
-  /*.btn-submit:hover{*/
-  /*    padding: 7px 51px 7px 51px ;*/
 
-  /*    border: 5px solid var(--yellow);*/
-  /*    !*background-color: #ffedad;*!*/
-  /*    background-color: #ffffff;*/
-  /*    cursor: pointer;*/
-  /*}*/
-  //change autofill back ground color
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  input:-webkit-autofill:active{
-    -webkit-background-clip: text;
-    //-webkit-text-fill-color:$dark-blue;
-  }
-  .fill-image{
-    width:583px;
-    max-width:583px;
-  }
-  img {
-    display: block;
-    margin: 0;
-    border: none;
-    padding: 0;
-  }
-  .logo-image{
-    width: 76px;
-  }
-  .error-msg-container{
-    margin-left: auto;
-    height: 15px;
-    margin-top: 5px;
-    display: block;
-    border: none;
-    padding: 0;
-  }
-  .error-msg{
-    display: block;
-    margin-top: -1px;
-  }
-  .field-set{
-    margin-top: 31px;
-    width: fit-content;
-  }
-  .input-value-error{
-    /*display: flex;*/
-    //margin-top: 18px !important;
-  }
-  .field-input{
-    margin-top: 15px;
-    display: flex;
 
-  }
-  .input-error{
-    //not in use
-    //color: $red;
-    font-weight: 600;
 
-  }
+
+
 
 }

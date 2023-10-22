@@ -7,22 +7,20 @@ body {
   ///*display: block;*/
   margin: 0px;
   height: 100vh;
+  min-height: fit-content;
 }
 
 h1{
   margin: 0px;
   margin-top: 31px;
-  //width: 471px;
   @extend .chr-title;
 }
 .commentForm {
-  /*background-color: aqua;*/
   width: 100%;
   height: 768px;
 
 }
 .fillerImage {
-  /*background-color: blueviolet;*/
   background-image: url("../../assests/jordan-steranka-lpddCskeg4A-unsplash@2x.png");
   background-size: auto;
 
@@ -37,8 +35,6 @@ h1{
 }
 .commentFormBody {
   margin-top: max( calc((81/768)* 100vh),81px ) ;
-  /*height: 100%;*/
-  /*background-color: darkorange;*/
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
@@ -50,15 +46,12 @@ h1{
   height: 76px;
   width: 76px;
 }
-.title{
-  //width: 100%;
-}
+
 .field{
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  //width: 444px;
 }
 .field-title{
   @extend .chr-field-title;
@@ -69,11 +62,9 @@ h1{
   border-bottom: 1px solid $light-grey;
   outline: none;
   width: calc((444 / 575) * 100vw);
-  /*background-color: var(--yellow);*/
   padding: 0;
   padding-bottom: 5px;
   @extend .chr-field-input-value;
-  /*text-align: center;*/
 }
 .field-input-text::placeholder {
   @extend .chr-field-input-placeholder;

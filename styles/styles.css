@@ -79,6 +79,7 @@ body {
   background-color: linen;
   margin: 0px;
   height: 100vh;
+  min-height: fit-content;
 }
 
 h1 {
@@ -87,13 +88,11 @@ h1 {
 }
 
 .commentForm {
-  /*background-color: aqua;*/
   width: 100%;
   height: 768px;
 }
 
 .fillerImage {
-  /*background-color: blueviolet;*/
   background-image: url("../../assests/jordan-steranka-lpddCskeg4A-unsplash@2x.png");
   background-size: auto;
   display: none;
@@ -107,8 +106,6 @@ h1 {
 
 .commentFormBody {
   margin-top: max(10.546875vh, 81px);
-  /*height: 100%;*/
-  /*background-color: darkorange;*/
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
@@ -134,10 +131,8 @@ h1 {
   border-bottom: 1px solid #EBEBEB;
   outline: none;
   width: 77.2173913043vw;
-  /*background-color: var(--yellow);*/
   padding: 0;
   padding-bottom: 5px;
-  /*text-align: center;*/
 }
 
 .field-input-text::placeholder {
@@ -259,131 +254,35 @@ img {
 @media screen and (min-width: 576px) {
   body {
     background-color: #ffb89f;
-    /*display: block;*/
-    margin: 0px;
   }
   h1 {
-    margin: 0px;
-    margin-top: 31px;
     width: 471px;
   }
   .commentForm {
-    /*background-color: aqua;*/
-    width: 100%; /* Dynamically calculates the width */
     height: fit-content;
     min-width: 57.3206442167vw;
   }
-  .fillerImage {
-    /*background-color: blueviolet;*/
-    width: 42.6793557833vw; /* Dynamically calculates the width */
-    background-size: cover;
-    height: 100vh;
-    display: none;
-  }
   .container {
-    display: flex;
     flex-direction: column;
   }
   .commentFormBody {
     margin-top: max(10.546875vh, 81px);
     height: fit-content;
-    /*background-color: darkorange;*/
-    width: fit-content;
     min-width: 471px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 80px;
-  }
-  .logo {
-    height: 76px;
-    width: 76px;
   }
   .title {
     width: fit-content;
   }
   .field {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     width: 444px;
   }
   .field-input-text {
-    border: 0;
-    outline: none;
     width: 444px;
-    /*background-color: var(--yellow);*/
-    padding: 0;
-    padding-bottom: 5px;
-    /*text-align: center;*/
-  }
-  .field-input-text::placeholder {
-    opacity: 1; /* Firefox */
-  }
-  .btn-submit {
-    height: 45px;
-    margin-top: 30px;
-    border: 0;
-    border-radius: 0;
-    padding: 12px 56px 12px 56px;
-  }
-  .btn-submit-text {
-    height: 21px;
-  }
-  .btn-submit-container {
-    width: fit-content;
-  }
-  /*.btn-submit:hover{*/
-  /*    padding: 7px 51px 7px 51px ;*/
-  /*    border: 5px solid var(--yellow);*/
-  /*    !*background-color: #ffedad;*!*/
-  /*    background-color: #ffffff;*/
-  /*    cursor: pointer;*/
-  /*}*/
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  input:-webkit-autofill:active {
-    -webkit-background-clip: text;
   }
   .fill-image {
     width: 583px;
     max-width: 583px;
-  }
-  img {
-    display: block;
-    margin: 0;
-    border: none;
-    padding: 0;
-  }
-  .logo-image {
-    width: 76px;
-  }
-  .error-msg-container {
-    margin-left: auto;
-    height: 15px;
-    margin-top: 5px;
-    display: block;
-    border: none;
-    padding: 0;
-  }
-  .error-msg {
-    display: block;
-    margin-top: -1px;
-  }
-  .field-set {
-    margin-top: 31px;
-    width: fit-content;
-  }
-  .input-value-error {
-    /*display: flex;*/
-  }
-  .field-input {
-    margin-top: 15px;
-    display: flex;
-  }
-  .input-error {
-    font-weight: 600;
   }
 }
 .chr-title, h1 {
@@ -422,132 +321,22 @@ img {
   color: #05253C;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 970px) {
   body {
     background-color: #faf47d;
-    /*display: block;*/
-    margin: 0px;
-  }
-  h1 {
-    margin: 0px;
-    margin-top: 31px;
-    width: 471px;
   }
   .commentForm {
-    /*background-color: aqua;*/
     width: 57.3206442167vw; /* Dynamically calculates the width */
-    height: fit-content;
-    min-width: 57.3206442167vw;
   }
   .fillerImage {
-    /*background-color: blueviolet;*/
     width: 42.6793557833vw; /* Dynamically calculates the width */
     background-size: cover;
     height: 100vh;
+    min-height: 767px;
     display: block;
   }
   .container {
-    display: flex;
     flex-direction: row;
-  }
-  .commentFormBody {
-    margin-top: max(10.546875vh, 81px);
-    height: fit-content;
-    /*background-color: darkorange;*/
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .logo {
-    height: 76px;
-    width: 76px;
-  }
-  .title {
-    width: fit-content;
-  }
-  .field {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 444px;
-  }
-  .field-input-text {
-    border: 0;
-    outline: none;
-    width: 444px;
-    /*background-color: var(--yellow);*/
-    padding: 0;
-    padding-bottom: 5px;
-    /*text-align: center;*/
-  }
-  .field-input-text::placeholder {
-    opacity: 1; /* Firefox */
-  }
-  .btn-submit {
-    height: 45px;
-    margin-top: 30px;
-    border: 0;
-    border-radius: 0;
-    padding: 12px 56px 12px 56px;
-  }
-  .btn-submit-text {
-    height: 21px;
-  }
-  .btn-submit-container {
-    width: fit-content;
-  }
-  /*.btn-submit:hover{*/
-  /*    padding: 7px 51px 7px 51px ;*/
-  /*    border: 5px solid var(--yellow);*/
-  /*    !*background-color: #ffedad;*!*/
-  /*    background-color: #ffffff;*/
-  /*    cursor: pointer;*/
-  /*}*/
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  input:-webkit-autofill:active {
-    -webkit-background-clip: text;
-  }
-  .fill-image {
-    width: 583px;
-    max-width: 583px;
-  }
-  img {
-    display: block;
-    margin: 0;
-    border: none;
-    padding: 0;
-  }
-  .logo-image {
-    width: 76px;
-  }
-  .error-msg-container {
-    margin-left: auto;
-    height: 15px;
-    margin-top: 5px;
-    display: block;
-    border: none;
-    padding: 0;
-  }
-  .error-msg {
-    display: block;
-    margin-top: -1px;
-  }
-  .field-set {
-    margin-top: 31px;
-    width: fit-content;
-  }
-  .input-value-error {
-    /*display: flex;*/
-  }
-  .field-input {
-    margin-top: 15px;
-    display: flex;
-  }
-  .input-error {
-    font-weight: 600;
   }
 }
 .chr-title, h1 {
@@ -589,123 +378,12 @@ img {
 @media screen and (min-width: 1366px) {
   body {
     background-color: lightgreen;
-    /*display: block;*/
-    margin: 0px;
-  }
-  h1 {
-    width: 471px;
   }
   .commentForm {
-    /*background-color: aqua;*/
-    width: 57.3206442167vw; /* Dynamically calculates the width */
-  }
-  .fillerImage {
-    /*background-color: blueviolet;*/
-    width: 42.6793557833vw; /* Dynamically calculates the width */
-    background-size: cover;
-    height: 100vh;
-    display: block;
-  }
-  .container {
-    display: flex;
-    flex-direction: row;
+    min-width: 783px;
   }
   .commentFormBody {
-    margin-top: max(10.546875vh, 81px);
-    height: fit-content;
-    width: fit-content;
     margin-left: 10.1756954612vw;
-  }
-  .logo {
-    height: 76px;
-    width: 76px;
-  }
-  .title {
-    width: fit-content;
-  }
-  .field {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 444px;
-  }
-  .field-input-text {
-    border: 0;
-    outline: none;
-    width: 444px;
-    /*background-color: var(--yellow);*/
-    padding: 0;
-    padding-bottom: 5px;
-    /*text-align: center;*/
-  }
-  .field-input-text::placeholder {
-    opacity: 1; /* Firefox */
-  }
-  .btn-submit {
-    height: 45px;
-    margin-top: 30px;
-    border: 0;
-    border-radius: 0;
-    padding: 12px 56px 12px 56px;
-  }
-  .btn-submit-text {
-    height: 21px;
-  }
-  .btn-submit-container {
-    width: fit-content;
-  }
-  /*.btn-submit:hover{*/
-  /*    padding: 7px 51px 7px 51px ;*/
-  /*    border: 5px solid var(--yellow);*/
-  /*    !*background-color: #ffedad;*!*/
-  /*    background-color: #ffffff;*/
-  /*    cursor: pointer;*/
-  /*}*/
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  input:-webkit-autofill:active {
-    -webkit-background-clip: text;
-  }
-  .fill-image {
-    width: 583px;
-    max-width: 583px;
-  }
-  img {
-    display: block;
-    margin: 0;
-    border: none;
-    padding: 0;
-  }
-  .logo-image {
-    width: 76px;
-  }
-  .error-msg-container {
-    margin-left: auto;
-    height: 15px;
-    margin-top: 5px;
-    display: block;
-    border: none;
-    padding: 0;
-  }
-  .error-msg {
-    display: block;
-    margin-top: -1px;
-  }
-  .field-set {
-    margin-top: 31px;
-    width: fit-content;
-  }
-  .input-value-error {
-    /*display: flex;*/
-  }
-  .field-input {
-    margin-top: 15px;
-    display: flex;
-  }
-  .input-error {
-    font-weight: 600;
   }
 }
 

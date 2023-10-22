@@ -76,7 +76,6 @@
 }
 
 body {
-  background-color: linen;
   margin: 0px;
   height: 100vh;
   min-height: fit-content;
@@ -252,9 +251,6 @@ img {
 }
 
 @media screen and (min-width: 576px) {
-  body {
-    background-color: #ffb89f;
-  }
   h1 {
     width: 471px;
   }
@@ -322,9 +318,6 @@ img {
 }
 
 @media screen and (min-width: 970px) {
-  body {
-    background-color: #faf47d;
-  }
   .commentForm {
     width: 57.3206442167vw; /* Dynamically calculates the width */
   }
@@ -376,9 +369,6 @@ img {
 }
 
 @media screen and (min-width: 1366px) {
-  body {
-    background-color: lightgreen;
-  }
   .commentForm {
     min-width: 783px;
   }

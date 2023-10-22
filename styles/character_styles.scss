@@ -1,0 +1,45 @@
+@import "colors";
+
+.chr-title{
+  font: normal normal 200 40px Manrope;
+  letter-spacing: 0px;
+  color: $dark-blue;
+}
+//.chr-base{
+//  font: normal normal 200 40px Plus Jakarta Sans;
+//  letter-spacing: 0px;
+//  color: $dark-blue;
+//}
+.chr-field-title{
+  font: normal normal 500 16px Plus Jakarta Sans;
+  letter-spacing: 0px;
+  color: $dark-blue;
+}
+.chr-field-input{
+  font: 500 12px Plus Jakarta Sans;
+  letter-spacing: 0px;
+}
+.chr-field-input-placeholder{
+  @extend .chr-field-input;
+  color: $grey;
+}
+.chr-field-input-value{
+  @extend .chr-field-input;
+  color: $dark-blue;
+}
+.chr-field-error{
+  @extend .chr-field-input;
+  font-weight: 600;
+  color: $red;
+}
+.chr-field-input-value-error{
+  @extend .chr-field-error;
+}
+.chr-field-error-msg{
+  @extend .chr-field-error;
+}
+.chr-btn-submit{
+  font: normal normal 600 16px Plus Jakarta Sans;
+  letter-spacing: 0px;
+  color: $dark-blue;
+}

@@ -18,11 +18,12 @@
   }
   .commentForm {
     /*background-color: aqua;*/
-    width: calc((783 / 1366) * 100vw); /* Dynamically calculates the width */
+    width: 100%; /* Dynamically calculates the width */
     height: fit-content;
-    min-width: 783px;
+    min-width: calc((783 / 1366) * 100vw);// reassign of value due to lower media queries
 
   }
+
   .fillerImage {
     /*background-color: blueviolet;*/
     width: calc((583 / 1366) * 100vw); /* Dynamically calculates the width */
@@ -30,9 +31,12 @@
 
     //width: 583px;
     height: 100vh;
+    display: none;
   }
+
   .container {
     display: flex;
+    flex-direction: column;
   }
   .commentFormBody {
     margin-top: max( calc((81/768)* 100vh),81px ) ;
@@ -42,7 +46,11 @@
     //    margin-left: 139px;
     //calc((81/768)* 100vh);
     width: fit-content;
-    margin-left: calc((139 / 1366) * 100vw);
+    min-width: 471px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
   }
   .logo{
     //background-color: $yellow;

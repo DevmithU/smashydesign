@@ -12,15 +12,12 @@
   }
 
   h1{
-    margin: 0px;
-    margin-top: 31px;
     width: 471px;
   }
   .commentForm {
     /*background-color: aqua;*/
     width: calc((783 / 1366) * 100vw); /* Dynamically calculates the width */
-    height: fit-content;
-    min-width: 783px;
+
 
   }
   .fillerImage {
@@ -30,17 +27,19 @@
 
     //width: 583px;
     height: 100vh;
+    display: block;
+
   }
   .container {
     display: flex;
+    flex-direction: row;
+
   }
+
   .commentFormBody {
     margin-top: max( calc((81/768)* 100vh),81px ) ;
     height: fit-content;
-    /*background-color: darkorange;*/
-    //calc((139 / 1366) * 100vw);
-    //    margin-left: 139px;
-    //calc((81/768)* 100vh);
+
     width: fit-content;
     margin-left: calc((139 / 1366) * 100vw);
   }

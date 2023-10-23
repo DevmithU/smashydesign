@@ -8,12 +8,10 @@ function validateField(fieldId,fieldName) {
     if (!field.value.trim()) {
         errorField.textContent = `${fieldName} is required.`;
         disableButton();
-        console.log('444');
 
     } else {
         errorField.textContent = "";
         enableButton()
-        console.log('333');
 
         if (fieldId === "email") {
             const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -21,13 +19,11 @@ function validateField(fieldId,fieldName) {
                 errorField.textContent = "Invalid email address";
                 field.classList.add("input-value-error");
                 disableButton();
-                console.log('222');
 
             }else{
                 field.classList.remove("input-value-error");
                 errorField.textContent = "";
                 enableButton()
-                console.log('1111');
 
             }
         }
@@ -36,13 +32,11 @@ function validateField(fieldId,fieldName) {
 function disableButton(){
     errorFlag = false;
     document.getElementById('submitButton').classList.add('btn-disabled');
-    console.log('999');
 
 }
 function enableButton(){
     errorFlag = true;
     document.getElementById('submitButton').classList.remove('btn-disabled');
-    console.log('777');
 
 
 }

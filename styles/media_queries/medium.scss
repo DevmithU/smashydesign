@@ -3,17 +3,15 @@
 @media screen and (min-width: 970px) {
 
 
-  body {
-    //background-color: #faf47d;
-  }
+
 
 
   .commentForm {
-    width: calc((783 / 1366) * 100vw); /* Dynamically calculates the width */
+    width: calc((783 / 1366) * 100vw);
 
   }
   .fillerImage {
-    width: calc((583 / 1366) * 100vw); /* Dynamically calculates the width */
+    width: calc((583 / 1366) * 100vw);
     background-size: cover;
     height: 100vh;
     min-height: 767px;

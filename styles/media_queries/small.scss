@@ -3,9 +3,7 @@
 @media screen and (min-width: 576px) {
 
 
-  body {
-    //background-color: #ffb89f;
-  }
+
 
   h1{
 
@@ -13,8 +11,7 @@
   }
   .commentForm {
     height: fit-content;
-    min-width: calc((783 / 1366) * 100vw);// reassign of value due to lower media queries
-
+    min-width: calc((783 / 1366) * 100vw);
   }
 
 
@@ -39,10 +36,7 @@
   .field-input-text{
     width: 444px;
   }
-  .fill-image{
-    width:583px;
-    max-width:583px;
-  }
+
 
 
 }

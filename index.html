@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/validation.js"></script>
+
 
 
 
@@ -14,6 +16,7 @@
 
 
     <div class="commentForm">
+        <form id="userForm">
 
         <div class="commentFormBody">
 
@@ -37,15 +40,14 @@
                     </span>
                     </div>
                     <div class="field-input">
-                        <input class="field-input-text" type="text" placeholder="Please type your first name" value="Chamaka">
+                        <input class="field-input-text" type="text" placeholder="Please type your first name"  id="firstName" name="firstName" onblur="validateField('firstName','First Name')" required>
 
                     </div>
                     <div class="field-line">
 
                     </div>
                     <div class="error-msg-container">
-                    <span class="error-msg">
-                                                Invalid email address
+                        <span class="error-msg" id="firstNameError">
 
                     </span>
                     </div>
@@ -58,15 +60,14 @@
                     </span>
                     </div>
                     <div class="field-input">
-                        <input class="field-input-text" type="text" placeholder="Please type your last name">
+                        <input class="field-input-text" type="text" placeholder="Please type your last name" id="lastName" name="lastName" onblur="validateField('lastName','Last Name')" required>
 
                     </div>
                     <div class="field-line">
 
                     </div>
                     <div class="error-msg-container">
-                    <span class="error-msg">
-                                                Invalid Last Name
+                        <span class="error-msg"  id="lastNameError" >
 
                     </span>
                     </div>
@@ -79,15 +80,14 @@
                     </span>
                     </div>
                     <div class="field-input ">
-                        <input class="field-input-text input-value-error" type="text" placeholder="Please type your email address" value="hellosmashy#.com">
+                        <input class="field-input-text " type="text" placeholder="Please type your email address" id="email" name="email" onblur="validateField('email','Email')" required>
 
                     </div>
                     <div class="field-line">
 
                     </div>
                     <div class="error-msg-container">
-                    <span class="error-msg">
-                        Invalid email address
+                        <span class="error-msg" id="emailError">
                     </span>
                     </div>
                 </div>
@@ -99,15 +99,14 @@
                     </span>
                     </div>
                     <div class="field-input ">
-                        <input class="field-input-text" type="text" placeholder="Please type your address">
+                        <input class="field-input-text" type="text" placeholder="Please type your address" id="address" name="address" onblur="validateField('address','Address')" required>
 
                     </div>
                     <div class="field-line">
 
                     </div>
                     <div class="error-msg-container">
-                    <span class="error-msg">
-                                                Invalid  address
+                        <span class="error-msg" id="addressError">
 
                     </span>
                     </div>
@@ -118,7 +117,7 @@
             </div>
 
             <div class="btn-submit-container">
-                <button class="btn-submit">
+                <button class="btn-submit btn-disabled"  onclick="submitMessage()" id="submitButton">
                     <div class="btn-submit-text">
                         <span >Submit</span>
                     </div>
@@ -127,7 +126,7 @@
             </div>
 
         </div>
-
+        </form>
     </div>
 
     <div class="fillerImage">
@@ -137,6 +136,13 @@
 </div>
 
 
-
+<script>
+    document.getElementById("userForm").onkeypress = function(e) {
+        var key = e.charCode || e.keyCode || 0;
+        if (key == 13) {
+            e.preventDefault();
+        }
+    }
+</script>
 </body>
 </html>

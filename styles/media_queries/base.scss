@@ -3,8 +3,7 @@
 
 
 body {
-  //background-color: linen;
-  ///*display: block;*/
+
   margin: 0px;
   height: 100vh;
   min-height: fit-content;
@@ -88,14 +87,13 @@ h1{
   width: fit-content;
 }
 
-/*.btn-submit:hover{*/
-/*    padding: 7px 51px 7px 51px ;*/
+.btn-submit:hover{
+  padding: 7px 51px 7px 51px ;
 
-/*    border: 5px solid var(--yellow);*/
-/*    !*background-color: #ffedad;*!*/
-/*    background-color: #ffffff;*/
-/*    cursor: pointer;*/
-/*}*/
+  border: 5px solid $yellow;
+  background-color: #ffffff;
+  cursor: pointer;
+}
 //change autofill back ground color
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -103,6 +101,17 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active{
   -webkit-background-clip: text;
   -webkit-text-fill-color:$dark-blue;
+}
+.btn-disabled{
+  //opacity: 0.6;
+  cursor: not-allowed;
+}
+.btn-disabled:hover{
+  padding: 12px 56px 12px 56px ;
+  border: 0;
+
+  background-color: $yellow;
+  cursor: not-allowed;
 }
 
 img {
@@ -139,11 +148,5 @@ img {
 .field-input{
   margin-top: 15px;
   display: flex;
-
-}
-.input-error{
-  //not in use
-  color: $red;
-  font-weight: 600;
 
 }

@@ -155,19 +155,30 @@ h1 {
   width: fit-content;
 }
 
-/*.btn-submit:hover{*/
-/*    padding: 7px 51px 7px 51px ;*/
-/*    border: 5px solid var(--yellow);*/
-/*    !*background-color: #ffedad;*!*/
-/*    background-color: #ffffff;*/
-/*    cursor: pointer;*/
-/*}*/
+.btn-submit:hover {
+  padding: 7px 51px 7px 51px;
+  border: 5px solid #FFDC47;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-background-clip: text;
   -webkit-text-fill-color: #05253C;
+}
+
+.btn-disabled {
+  cursor: not-allowed;
+}
+
+.btn-disabled:hover {
+  padding: 12px 56px 12px 56px;
+  border: 0;
+  background-color: #FFDC47;
+  cursor: not-allowed;
 }
 
 img {
@@ -207,11 +218,6 @@ img {
 .field-input {
   margin-top: 15px;
   display: flex;
-}
-
-.input-error {
-  color: #FF0000;
-  font-weight: 600;
 }
 
 .chr-title, h1 {
@@ -276,10 +282,6 @@ img {
   .field-input-text {
     width: 444px;
   }
-  .fill-image {
-    width: 583px;
-    max-width: 583px;
-  }
 }
 .chr-title, h1 {
   font: normal normal 200 40px Manrope;
@@ -319,10 +321,10 @@ img {
 
 @media screen and (min-width: 970px) {
   .commentForm {
-    width: 57.3206442167vw; /* Dynamically calculates the width */
+    width: 57.3206442167vw;
   }
   .fillerImage {
-    width: 42.6793557833vw; /* Dynamically calculates the width */
+    width: 42.6793557833vw;
     background-size: cover;
     height: 100vh;
     min-height: 767px;

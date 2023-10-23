@@ -16,7 +16,6 @@
 
 
     <div class="commentForm">
-        <form id="userForm">
 
         <div class="commentFormBody">
 
@@ -32,6 +31,8 @@
                 </h1>
 
             </div>
+            <form id="userForm">
+
             <div class="field-set">
                 <div class="field">
                     <div class="field-title">
@@ -115,6 +116,7 @@
 
 
             </div>
+            </form>
 
             <div class="btn-submit-container">
                 <button class="btn-submit btn-disabled"  onclick="submitMessage()" id="submitButton">
@@ -126,7 +128,6 @@
             </div>
 
         </div>
-        </form>
     </div>
 
     <div class="fillerImage">
@@ -134,7 +135,12 @@
     </div>
 
 </div>
-
+<div class="overlay" id="overlay">
+    <div class="message-box">
+        <p>Your message was submitted</p>
+        <button onclick="hideMessage()" class="btn-submit">OK</button>
+    </div>
+</div>
 
 <script>
     document.getElementById("userForm").onkeypress = function(e) {

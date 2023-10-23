@@ -50,7 +50,15 @@ function submitMessage(){
 
     if(errorFlag){
         //Form submission code
+        showMessage();
         console.log('Form data Submitted');
     }
+
+}
+function showMessage() {
+    document.getElementById('overlay').style.display = 'block';
 }
 
+function hideMessage() {
+    document.getElementById('overlay').style.display = 'none';
+}
